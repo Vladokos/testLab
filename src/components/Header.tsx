@@ -1,7 +1,8 @@
-import "../assets/styles/Header.css";
-
-import logo from "../assets/images/logo.svg";
 import { Burger } from "./Burger";
+
+import logo from "../assets/images/header/logo.svg";
+
+import "../assets/styles/header/Header.css";
 
 export const Header = () => {
   return (
@@ -31,7 +32,7 @@ export const Header = () => {
           <div className="greetings__inner">
             <div>
               <h1 className="title">
-                Говорят, никогда не поздно <br /> сменить профессию
+                Говорят, никогда не поздно сменить профессию
               </h1>
               <span className="subtitle">
                 Сделай круто тестовое задание и у тебя получится

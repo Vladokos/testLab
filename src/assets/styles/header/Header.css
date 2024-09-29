@@ -1,5 +1,5 @@
 .wrapper {
-  background-image: url("../images/bg.jpeg");
+  background-image: url("../../images/header/bg.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,9 +82,10 @@
   margin-bottom: 92px;
 }
 
-.title {
+.greetings__inner .title {
   font-size: 52px;
   line-height: 64px;
+  color: #ffffff;
 
   margin-bottom: 18px;
 }
@@ -129,6 +130,10 @@
     display: initial;
   }
 
+  .greetings {
+    margin-top: 317px;
+  }
+
   .greetings__inner > div {
     margin-bottom: 40px;
   }
@@ -136,10 +141,43 @@
   .title {
     font-size: 32px;
     line-height: 40px;
+
+    margin-bottom: 17px;
   }
 
   .subtitle {
     font-size: 16px;
     line-height: 28px;
+  }
+}
+
+@media (max-width: 376px) {
+  .greetings {
+    margin-top: 92px;
+  }
+
+  .greetings__inner > div {
+    margin-bottom: 26px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 32px;
+
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    display: block;
+
+    max-width: 288px;
+
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 321px) {
+  .greetings {
+    margin-top: 48px;
   }
 }

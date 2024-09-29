@@ -1,0 +1,61 @@
+.input{
+  width: inherit;
+}
+.input-field {
+  position: relative;
+  max-width: 347px;
+  width: inherit;
+  height: 44px;
+  line-height: 44px;
+}
+label {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  width: 100%;
+  transition: 0.2s all;
+  cursor: text;
+
+  color: rgb(94, 100, 106);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+input {
+  max-width: 349px;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0.5rem 0;
+  border: 2px solid #f6f8fa;
+  box-shadow: none;
+  border-radius: 4px;
+
+  color: rgb(25, 28, 31);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+
+  background-color: #f6f8fa;
+
+  padding: 16px 16px 0 16px;
+  height: 45px;
+}
+input:invalid {
+  outline: 0;
+}
+input:focus,
+input:valid {
+  border-color: #c2c8cd;
+  background-color: transparent;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: 2px;
+
+  color: rgb(131, 137, 143);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+

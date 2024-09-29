@@ -2,11 +2,11 @@ import { useState } from "react";
 
 import getScrollbarWidth from "../hooks/getScrollWidth";
 
-import logoB from "../assets/images/logoB.svg";
-import cross from "../assets/images/Cross.svg";
-import rightArrow from "../assets/images/RightArrow.svg";
+import logoB from "../assets/images/burger/logoB.svg";
+import cross from "../assets/images/burger/Cross.svg";
+import rightArrow from "../assets/images/burger/RightArrow.svg";
 
-import "../assets/styles/Burger.css";
+import "../assets/styles/burger/Burger.css";
 
 export const Burger = () => {
   const [isClicked, setIsClicked] = useState<string>("");
@@ -30,7 +30,6 @@ export const Burger = () => {
     setIsClicked("inactive");
   };
 
-  console.log(getScrollbarWidth());
   return (
     <div className="burger">
       <div onClick={() => burgerOpen()}>

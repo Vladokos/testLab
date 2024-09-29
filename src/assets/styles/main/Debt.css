@@ -1,0 +1,134 @@
+.debt__inner {
+  display: flex;
+
+  padding: 144px 0 298px 0;
+
+  background-color: #fff;
+}
+
+.debt .about {
+  margin-right: 32px;
+}
+
+.debt .about .title {
+  font-size: 32px;
+  line-height: 40px;
+
+  margin-bottom: 18px;
+}
+
+.debt .about .subtitle {
+  max-width: 592px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+
+  color: #5e646a;
+}
+
+.images {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 592px;
+}
+
+.truck,
+.phone {
+  position: absolute;
+  bottom: -100px;
+}
+
+.truck > img,
+.phone > img {
+  width: 592px;
+  height: 448px;
+}
+
+.truck {
+  z-index: 0;
+}
+
+.phone {
+  z-index: 2;
+}
+
+@media (max-width: 1333px) {
+  .truck > img,
+  .phone > img {
+    width: 351px;
+    height: 265px;
+  }
+}
+
+@media (max-width: 1007px) {
+  .debt .about .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .debt .about .subtitle {
+    max-width: 347px;
+  }
+
+  .truck,
+  .phone {
+    bottom: 30px;
+  }
+
+  .images {
+    max-width: 351px;
+  }
+
+  .debt__inner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .debt__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .debt .about {
+    margin-right: 0;
+  }
+
+  .debt .about .title {
+    text-align: center;
+  }
+  .debt .about .subtitle {
+    text-align: center;
+  }
+
+  .images {
+    max-width: 345px;
+    height: 258px;
+  }
+  .truck > img,
+  .phone > img {
+    width: 342px;
+    height: 258px;
+  }
+
+  .truck,
+  .phone {
+    bottom: 160px;
+  }
+}
+
+@media (max-width: 370px) {
+  .images {
+    max-width: 288px;
+    height: 217.64px;
+  }
+  .truck > img,
+  .phone > img {
+    width: 288px;
+    height: 217.64px;
+  }
+}

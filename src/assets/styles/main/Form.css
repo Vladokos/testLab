@@ -1,0 +1,125 @@
+.form {
+  padding: 100px 0 100px 0;
+}
+
+.form__inner .title {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 32px;
+}
+
+form > .first {
+  justify-self: end;
+}
+
+form > div:not(:last-child) {
+  height: 64px;
+
+  max-width: 384px;
+  width: 100%;
+}
+
+.req {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+
+  justify-self: end;
+  margin-right: 65px;
+
+  color: rgb(25, 28, 31);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.req > div:first-child {
+  height: 30px;
+  width: 40px;
+}
+
+.send button {
+  cursor: pointer;
+
+  border: 1px solid #2a6cea;
+  outline: none;
+
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+
+  padding: 20px 40px;
+
+  background-color: #2a6cea;
+
+  border-radius: 4px;
+
+  height: 64px;
+  max-width: 384px;
+  width: 100%;
+
+  transition: 0.2s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.send button:hover {
+  background-color: #ffffff;
+  border-color: #c2c8cd;
+  color: #191c1f;
+}
+
+@media (max-width: 796px) {
+  form > div:not(:last-child) {
+    width: 300px;
+  }
+  form > .first {
+    justify-self: initial;
+  }
+  .req {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .req > div {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 765px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .req {
+    margin-right: 0;
+
+    color: rgb(25, 28, 31);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  form > div:not(:last-child) {
+    width: 240px;
+  }
+  .form__inner .title {
+    color: rgb(25, 28, 31);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+
+@media (max-width:348px) {
+  form > div:not(:last-child) {
+    width: 180px;
+  }
+}
